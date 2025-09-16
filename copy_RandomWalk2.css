@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head-con{
+    color: #344d75;
+    font-size: 30px;
+    width: 100%;
+    height: auto;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 70px;
+    /* border-bottom: 1px solid #ccc; */
+  }
+  .left-menu,
+  .head-con,
+  .right-menu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.head-con img {
+    height: 40px;
+}
+
+.left-menu {
+    justify-content: flex-start;
+  }
+  
+  .right-menu {
+    justify-content: flex-end;
+  }
+  
+  .left-menu ul,
+  .right-menu ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .left-menu a,
+  .left-menu p,
+  .right-menu a {
+    text-decoration: none;
+    color: #344d75;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+span {
+  white-space: nowrap;
+}
+
+.new_arrival_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 70px;
+    /* border-bottom: 1px solid #ccc; */
+  }
+  .left-menu,
+  .head-con,
+  .right-menu {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    color: #344d75;
+  }
+  .left-menu {
+    font-size: 40px;
+  }
+
+.new_arrival_header > .left-menu {
+    margin-left: 50px;
+}
+
+.new_arrival_header > .right-menu {
+    margin-right: 50px;
+    color: #344d75;
+    text-decoration: none;
+}
+
+.new_Arrival_item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 한 줄에 4개 */
+    gap: 20px;
+    padding: 40px;
+  }
+  
+  .new_arrival_item_card {
+    /* border: 1px solid #e0e0e0; */
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.3s;
+  }
+  
+  /* .product-card:hover { 
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  } */
+  
+  .new_arrival_item_card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;  /* 정사각형 이미지 비율 유지 */
+    object-fit: cover;
+  }
+  
+  .new_arrival_item_card p {
+    font-size: 14px;
+    margin: 10px 0 5px;
+    /* color: #344d75;
+    text-decoration: none; */
+  }
+  
+  .new_arrival_item_card a {
+    text-decoration: none;
+    color: #344d75;
+  }
+
+  .has-dropdown {
+    position: relative; /* 기준점 */
+  }
+  
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding: 10px 20px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+  
+  .has-dropdown:hover .dropdown {
+    display: flex;
+  }
